@@ -16,22 +16,31 @@ function playerPlay(playerInput){
 
 
 function playingGame(){
-    
-    player = playerPlay(prompt("Turno del jugador ingrese su jugada (ROCK/PAPER/SCISSORS)"));
-    computer = computerPlay();
+    let playerWins = 0,
+    computerWins = 0;
+    while (playerWins < 5 && computerWins < 5){
 
-    console.log("Player choose "+showChoose(player))
-    console.log("Computer choose "+showChoose(computer))
+        player = playerPlay(prompt("Turno del jugador ingrese su jugada (ROCK/PAPER/SCISSORS)"));
+        computer = computerPlay();
+
+        console.log("Player choose "+showChoose(player))
+        console.log("Computer choose "+showChoose(computer))
 
 
-    if (winStage(player,computer)){
-        console.log("GANO EL JUGADOR");
-    }else if (winStage(computer,player)){
-        console.log("GANO LA COMPUTADORA");
-    }else{
-        console.log("Empate")
+
+        if (winStage(player,computer)){
+            console.log("GANO EL JUGADOR");
+            playerWins++;
+        }else if (winStage(computer,player)){
+            console.log("GANO LA COMPUTADORA");
+            computerWins++;
+        }else{
+            console.log("Empate")
+            console.log("TIE")
+        }
+        console.log("SCORE: " + playerWins + " / " +computerWins)
     }
-    
+    (playerWins == 5) ? console.log("PLAYER WIN!!!!!!") : console.log("COMPUTER WIN!!!!!!")
 }
 
 
