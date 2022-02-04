@@ -83,8 +83,6 @@ const endButton = document.getElementById("end-button");
 
 
 
-endBox.classList.toggle("invisible");
-endBox.classList.toggle("invisible");
 
 // BOTONES Y SUS RESPECTIVAS FUNCIONES
 

@@ -1,13 +1,46 @@
 :root{
     font-size: 10px;
+
+    --mainTitle: #fdd835;
+    --headBackground: #000051;
+    --mainBackground:#1a237e;
 }
 
+
+@font-face {
+    font-family: Press;
+    src: url(./fonts/press_start_2p/PressStart2P.ttf);
+}
 body{
     display: flex;
     flex-direction: column;
-
-    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    background-color: var(--mainBackground);
+    padding:0 ;
+    margin: 0;
+    
 }
+/* HEADER */
+
+#header{
+    display: flex;
+    
+    justify-content: center;
+    height: 100px;
+    background-color: var(--headBackground);
+
+    padding-top: 2rem;
+    
+}
+#title{
+    text-align: center;
+    font-family: Press, cursive;
+    font-size: 3.5rem;
+    color: var(--mainTitle);
+}
+/* CONTENT */
+
 
 #content{
     display: flex;
@@ -19,7 +52,7 @@ body{
 }
 h2{
     font-size: 5rem;
-    margin-bottom: -2.5rem;
+    
     
 }
 
@@ -37,7 +70,6 @@ h3{
     display: flex;
     justify-content: center;
     gap: 5rem;
-
     margin-top: 3rem;
 }
 
@@ -49,7 +81,7 @@ h3{
 
     gap: 10rem;
 
-
+    background-color: var(--mainBackground);
 }
 
 img{
@@ -62,32 +94,38 @@ img{
 
 #player,#computer{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    color: white;
 }
 
 
 
 
 /* END BOX ----------------------------- */
+
 #end-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
     padding: 2rem;
     background-color: gray;
-
+    
     border-radius: 2rem;
     border: solid black;
-
+    
     
 
 }
 .endBox{
-    transform: scale(2);
+    transform: translate(-50% ,-50%) scale(1);
 }
 .invisible{
-    transform: scale(0);
+    transform: translate(-50% ,-50%) scale(0);
 }
 #end-message{
     font-size: 3rem;
