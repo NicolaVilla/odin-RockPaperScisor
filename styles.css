@@ -1,0 +1,138 @@
+:root{
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    
+}
+h2{
+    font-size: 5rem;
+    margin-bottom: -2.5rem;
+    
+}
+
+h3{
+    font-size: 3rem;
+    
+}
+
+
+#score-Text{
+    font-size: 10rem;
+}
+/* CONTENT ------------------------------------------ */
+#buttonHolder{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    margin-top: 3rem;
+}
+
+/* SCORE -----------------------------*/
+
+#score{
+    display: flex;
+    justify-content: center;
+
+    gap: 10rem;
+
+
+}
+
+img{
+    width: 10rem;
+    height: 10rem;
+
+    border: solid;
+    border-radius: 2rem;
+}
+
+#player,#computer{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* END BOX ----------------------------- */
+#end-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+    background-color: gray;
+
+    border-radius: 2rem;
+    border: solid black;
+
+    
+
+}
+.endBox{
+    transform: scale(2);
+}
+.invisible{
+    transform: scale(0);
+}
+#end-message{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ----------------------------- */
+button{
+    cursor: pointer;
+
+    
+}
+.buttonRPS{
+    width: 20rem;
+    height: 20rem;
+    
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    border-radius: 3rem;
+    border: solid 0.5rem black;
+
+}
+/* EFFECT WHEN PRESSED */
+button:active{
+    transform: scale(0.9);
+}
+/* EFFECT WHEN CURSOR HOVER */
+.buttonRPS:hover{
+    box-shadow:0px 5px 15px gray;
+}
+
+#buttonRock{
+    background-image: url(./img/rock.jpg);
+    
+}
+
+
+#buttonPaper{
+    background-image: url(./img/paper.jpg);
+}
+
+#buttonScissor{
+    background-image: url(./img/scissors.jpg);
+}
+
+
