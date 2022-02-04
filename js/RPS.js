@@ -83,7 +83,6 @@ const endButton = document.getElementById("end-button");
 
 
 
-
 // BOTONES Y SUS RESPECTIVAS FUNCIONES
 
 document.getElementById("buttonRock").addEventListener('click', btnRock);
